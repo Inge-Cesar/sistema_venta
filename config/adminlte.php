@@ -363,8 +363,8 @@ return [
         ],
 
         [
-            'text' => 'Presentaciones',
-            'url' => 'admin/presentaciones',
+            'text' => 'Unidades',
+            'url' => 'admin/unidades',
             'icon' => 'fas fa-fw fa-th',
             'classes' => 'bg-blue text-white'
         ],

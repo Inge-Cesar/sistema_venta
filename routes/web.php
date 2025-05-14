@@ -42,3 +42,11 @@ Route::get('admin/marcas/{id}/edit', [App\Http\Controllers\MarcaController::clas
 Route::put('admin/marcas/{id}', [App\Http\Controllers\MarcaController::class, 'update'])->name('admin.marcas.update')->middleware('auth');
 Route::delete('admin/marcas/{id}', [App\Http\Controllers\MarcaController::class, 'destroy'])->name('admin.marcas.destroy')->middleware('auth');
 
+//Rutas para el CRUD de Unidades
+Route::get('admin/unidades', [App\Http\Controllers\UnidadController::class, 'index'])->name('admin.unidades.index')->middleware('auth');
+Route::get('admin/unidades/create', [App\Http\Controllers\UnidadController::class, 'create'])->name('admin.unidades.create')->middleware('auth');
+Route::post('admin/unidades', [App\Http\Controllers\UnidadController::class, 'store'])->name('admin.unidades.store')->middleware('auth');
+Route::get('admin/unidades/{id}/edit', [App\Http\Controllers\UnidadController::class, 'edit'])->name('admin.unidades.edit')->middleware('auth');
+Route::put('admin/unidades/{id}', [App\Http\Controllers\UnidadController::class, 'update'])->name('admin.unidades.update')->middleware('auth');
+Route::delete('admin/unidades/{id}', [App\Http\Controllers\UnidadController::class, 'destroy'])->name('admin.unidades.destroy')->middleware('auth');
+
